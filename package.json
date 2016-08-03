@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "unit": "NODE_ENV=radar_unit_test mocha test/unit/**/*.test.js"
   },
   "author": "LeeBox",
   "license": "MIT",

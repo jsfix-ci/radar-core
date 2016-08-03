@@ -1,3 +1,3 @@
 module.exports = {
-  xxx: 'xxx'
-}
+  rain:'rain'
+};
