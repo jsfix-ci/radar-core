@@ -4,7 +4,7 @@
   "description": "a reader just like panda",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LelesBox/radar.git"
+    "url": "git+https://github.com/LelesBox/radar-core.git"
   },
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "github-trending": "^1.3.1",
     "koa": "^2.0.0",
     "koa-body": "^1.4.0",
+    "koa-convert": "^1.2.0",
     "koa-ejs": "^3.0.0",
     "koa-generic-session": "^1.11.3",
     "koa-router": "^5.4.0",
@@ -28,9 +29,9 @@
     "mongoose": "^4.5.7"
   },
   "bugs": {
-    "url": "https://github.com/LelesBox/radar/issues"
+    "url": "https://github.com/LelesBox/radar-core/issues"
   },
-  "homepage": "https://github.com/LelesBox/radar#readme",
+  "homepage": "https://github.com/LelesBox/radar-core#readme",
   "devDependencies": {
     "mocha": "^2.5.3",
     "should": "^10.0.0",
