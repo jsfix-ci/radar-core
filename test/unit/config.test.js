@@ -1,6 +1,6 @@
-let should = require('should')
+require('should')
 let config = require('../../lib/config')
-let test_config = { asd: { asd: '111' },
+let testConfig = { asd: { asd: '111' },
   index: 1,
   nest: {
     rain: 'rain',
@@ -16,11 +16,12 @@ let test_config = { asd: { asd: '111' },
       port: 2333
     },
     production: {
-    port: 2333 }
+      port: 2333
+    }
   }
 }
 describe('test config', () => {
-  it('equal fixture config',()=>{
-    test_config.should.eql(config)
+  it('equal fixture config', () => {
+    testConfig.should.eql(config)
   })
 })

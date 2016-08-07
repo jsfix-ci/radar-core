@@ -33,8 +33,12 @@
   },
   "homepage": "https://github.com/LelesBox/radar-core#readme",
   "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-standard": "^2.0.0",
     "mocha": "^2.5.3",
     "should": "^10.0.0",
-    "supertest": "^1.2.0"
+    "sinon": "^1.17.5",
+    "supertest": "^2.0.0"
   }
 }
