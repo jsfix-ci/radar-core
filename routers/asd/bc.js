@@ -1,6 +1,4 @@
 module.exports = {
-  config: {
-    filter: ['SampleFilter']
-  },
+  filter: ['SampleFilter'],
   'get /ab': 'SampleController'
 }
