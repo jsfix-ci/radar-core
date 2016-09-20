@@ -10,5 +10,8 @@ module.exports = {
   'env': {
     'node': true,
     'mocha': true
+  },
+  'globals': {
+    'radar': true
   }
 }

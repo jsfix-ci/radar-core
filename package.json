@@ -1,7 +1,7 @@
 {
   "name": "radar",
   "version": "1.0.0",
-  "description": "a reader just like panda",
+  "description": "koa2 mvc scaffold",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LelesBox/radar-core.git"
