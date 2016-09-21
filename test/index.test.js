@@ -1,4 +1,4 @@
-// const should = require('should')
+require('should')
 const supertest = require('supertest')
 const sinon = require('sinon')
 const app = require('..')
@@ -18,7 +18,6 @@ before(function (done) {
   }, function (err) {
     if (err) return done(err)
     console.log('start on port 2334')
-    console.log(radar)
     done()
   })
 })
@@ -32,5 +31,18 @@ describe('radar startup', function () {
       .get('/')
       .expect(200)
       .end(done)
+  })
+  it('# 全局filter 加 普通路由', function (done) {
+    request
+      .get('/route')
+      .expect(200)
+      .end((err, response) => {
+        if (err) return console.log(err) && done()
+        response.body.controller.should.equal('c1')
+        response.body.filter.every((item, index) => {
+          return item === 'f' + (index + 1)
+        }).should.equal(true)
+        done()
+      })
   })
 })
