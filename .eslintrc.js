@@ -11,6 +11,9 @@ module.exports = {
     'node': true,
     'mocha': true
   },
+  rules: {
+    'no-new-func': 0
+  },
   'globals': {
     'radar': true
   }
