@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "unit": "NODE_ENV=radar_unit_test mocha test/unit/**/*.test.js"
+    "unit": "NODE_ENV=radar_unit_test mocha test/unit/**/*.test.js",
+    "test": "NODE_ENV=radar_unit_test mocha test/index.js"
   },
   "author": "LeeBox",
   "license": "MIT",
