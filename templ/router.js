@@ -1,3 +1,3 @@
 module.exports = {
-  '/': 'SampleController.index'
+  '/404': 'notfound'
 }
