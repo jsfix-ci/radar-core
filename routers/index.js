@@ -1,7 +1,7 @@
 module.exports = {
-  'get /rhyme': 'SampleController',
-  'get /': {
-    controller: 'LBController.lb',
-    filter: ['LBFilter.lb']
-  }
+  'get /': 'get',
+  'post /': 'post',
+  'delete /': 'delete',
+  'put /': 'put',
+  'patch /': 'patch'
 }

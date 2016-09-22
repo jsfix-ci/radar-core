@@ -2,7 +2,7 @@ module.exports = {
   c1: function (ctx, next) {
     ctx.body = {
       controller: 'c1',
-      filter: ctx.filter.split(',')
+      filter: ctx.filter
     }
     return next()
   },
@@ -22,8 +22,8 @@ module.exports = {
     ctx.body = 'patch'
     return next()
   },
-  pust: function (ctx, next) {
-    ctx.body = 'pust'
+  put: function (ctx, next) {
+    ctx.body = 'put'
     return next()
   }
 }
