@@ -1,3 +1,3 @@
 module.exports = {
-  '/404': 'notfound'
+  'get /404': 'notfound'
 }

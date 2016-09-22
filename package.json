@@ -1,6 +1,6 @@
 {
   "name": "radar-core",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "koa2 mvc scaffold",
   "repository": {
     "type": "git",
