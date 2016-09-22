@@ -30,5 +30,9 @@ module.exports = {
   put: function (ctx, next) {
     ctx.body = 'put'
     return next()
+  },
+  'get /fff': function (ctx, next) {
+    ctx.body = 'easy get'
+    return next()
   }
 }

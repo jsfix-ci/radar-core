@@ -87,7 +87,7 @@ describe('radar startup', function () {
       .get('/route')
       .expect(200)
       .end((err, response) => {
-        if (err) return console.log(err) && done()
+        if (err) return done(err)
         response.body.controller.should.equal('c1')
         response.body.filter.should.equal('f1,f2,f3')
         done()
@@ -98,9 +98,29 @@ describe('radar startup', function () {
       .get('/route2')
       .expect(200)
       .end((err, response) => {
-        if (err) return console.error(err) && done()
+        if (err) return done(err)
         response.body.controller.should.equal('c1')
         response.body.filter.should.equal('f1,f2,f3,f4')
+        done()
+      })
+  })
+  it('# 支持简单路由，既把路由写在控制器上', function (done) {
+    request
+      .get('/test')
+      .expect(200)
+      .end((err, response) => {
+        if (err) return done(err)
+        response.text.should.equal('i am simple route')
+        done()
+      })
+  })
+  it('# 支持radar挂载service', function (done) {
+    request
+      .get('/service')
+      .expect(200)
+      .end((err, response) => {
+        if (err) return done(err)
+        response.text.should.equal('hello service')
         done()
       })
   })
