@@ -34,5 +34,9 @@ module.exports = {
   'get /fff': function (ctx, next) {
     ctx.body = 'easy get'
     return next()
+  },
+  'get fsff': function (ctx, next) {
+    ctx.body = 'easy get'
+    return next()
   }
 }
