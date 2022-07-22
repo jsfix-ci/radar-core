@@ -28,7 +28,7 @@
     "koa-router": "^7.0.1",
     "log4js": "^0.6.38",
     "mongodb": "^2.2.5",
-    "mongoose": "^4.5.7"
+    "mongoose": "^5.13.14"
   },
   "bugs": {
     "url": "https://github.com/LelesBox/radar-core/issues"
